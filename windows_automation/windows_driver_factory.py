@@ -36,7 +36,7 @@ def get_windows_capabilities(req):
         tuple: (capabilities, hub_url) where capabilities is a dict and hub_url is a string
     """
     # Get the hub URL with a default value
-    hub_url = req.get('desktopDevice', {}).get('grid', {}).get('hubUrl', 'http://127.0.0.1:4721')
+    hub_url = req.get('desktopDevice', {}).get('grid', {}).get('hubUrl', 'http://127.0.0.1:4723')
     
     # Get app path and capabilities
     app_path = req.get('desktopDevice', {}).get('appPath', '')
