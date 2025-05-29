@@ -1,0 +1,226 @@
+2025-05-28 03:21:15,561 - INFO - Starting Notepad automation test with WinAppDriver...
+2025-05-28 03:21:15,795 - INFO - Starting WinAppDriver from: C:\Program Files (x86)\Windows Application Driver\WinAppDriver.exe
+2025-05-28 03:21:15,800 - INFO - WinAppDriver started
+2025-05-28 03:21:17,801 - INFO - 1. Connecting to WinAppDriver...
+2025-05-28 03:21:17,801 - ERROR - Test failed: WebDriver.__init__() got an unexpected keyword argument 'desired_capabilities'
+Traceback (most recent call last):
+  File "C:\Code\New folder\src\windows_automation\test_windows.py", line 70, in test_notepad_with_winappdriver
+    driver = webdriver.Remote(
+        command_executor='http://127.0.0.1:4723',
+        desired_capabilities=desired_caps
+    )
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'desired_capabilities'
+2025-05-28 03:21:17,802 - INFO - Test execution completed.
+2025-05-28 03:21:24,602 - INFO - Starting Notepad automation test with WinAppDriver...
+2025-05-28 03:21:24,835 - INFO - Starting WinAppDriver from: C:\Program Files (x86)\Windows Application Driver\WinAppDriver.exe
+2025-05-28 03:21:24,840 - INFO - WinAppDriver started
+2025-05-28 03:21:26,840 - INFO - 1. Connecting to WinAppDriver...
+2025-05-28 03:21:26,841 - ERROR - Test failed: WebDriver.__init__() got an unexpected keyword argument 'desired_capabilities'
+Traceback (most recent call last):
+  File "C:\Code\New folder\src\windows_automation\test_windows.py", line 70, in test_notepad_with_winappdriver
+    driver = webdriver.Remote(
+        command_executor='http://127.0.0.1:4723',
+        desired_capabilities=desired_caps
+    )
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'desired_capabilities'
+2025-05-28 03:21:26,841 - INFO - Test execution completed.
+2025-05-28 03:25:05,796 - INFO - Starting Notepad automation test with WinAppDriver...
+2025-05-28 03:25:05,943 - INFO - 1. Connecting to WinAppDriver...
+2025-05-28 03:25:05,943 - ERROR - Failed to initialize WebDriver: 'Options' object has no attribute 'load_capabilities'
+2025-05-28 03:25:05,943 - INFO - Test execution completed.
+2025-05-28 03:26:05,649 - INFO - Starting Notepad automation test with WinAppDriver...
+2025-05-28 03:26:05,807 - INFO - 1. Connecting to WinAppDriver...
+2025-05-28 03:26:05,928 - ERROR - Failed to initialize WebDriver: Message: Bad capabilities. Specify either app or appTopLevelWindow to create a session
+
+2025-05-28 03:26:05,928 - ERROR - Selenium version: 4.33.0
+2025-05-28 03:26:05,928 - INFO - Test execution completed.
+2025-05-28 03:27:26,928 - INFO - Starting Notepad automation test with WinAppDriver...
+2025-05-28 03:27:27,074 - INFO - 1. Connecting to WinAppDriver...
+2025-05-28 03:27:27,074 - ERROR - Failed to initialize WebDriver: WebDriver.__init__() got an unexpected keyword argument 'desired_capabilities'
+2025-05-28 03:27:27,074 - ERROR - Selenium version: 4.33.0
+2025-05-28 03:27:27,074 - ERROR - Make sure WinAppDriver is running and accessible at http://127.0.0.1:4723
+2025-05-28 03:27:27,074 - INFO - Test execution completed.
+2025-05-28 03:30:02,901 - INFO - Starting Notepad automation test with Windows Driver Factory...
+2025-05-28 03:30:02,901 - INFO - 1. Creating Windows driver using factory...
+2025-05-28 03:30:02,924 - ERROR - Test failed: Message: Bad capabilities. Specify either app or appTopLevelWindow to create a session
+Traceback (most recent call last):
+  File "C:\Code\New folder\src\windows_automation\test_windows.py", line 39, in test_notepad_with_factory
+    driver = create_windows_driver(test_config)
+  File "C:\Code\New folder\src\windows_automation\windows_driver_factory.py", line 24, in create_windows_driver
+    result = create_remote_windows_driver(req, options)
+  File "C:\Code\New folder\src\windows_automation\windows_driver_factory.py", line 51, in create_remote_windows_driver
+    appium_driver = webdriver.Remote(
+        command_executor=grid['hubUrl'],
+        options=capabilities
+    )
+  File "C:\Users\RohanThomas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\appium\webdriver\webdriver.py", line 238, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        client_config=client_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\RohanThomas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\RohanThomas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\appium\webdriver\webdriver.py", line 329, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "C:\Users\RohanThomas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\RohanThomas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Bad capabilities. Specify either app or appTopLevelWindow to create a session
+
+2025-05-28 03:30:02,926 - INFO - Test execution completed.
+2025-05-28 03:31:30,606 - INFO - Starting Notepad automation test with Windows Driver Factory...
+2025-05-28 03:31:30,606 - INFO - 1. Creating Windows driver using factory...
+2025-05-28 03:31:30,606 - ERROR - Test failed: WebDriver.__init__() got an unexpected keyword argument 'desired_capabilities'
+Traceback (most recent call last):
+  File "C:\Code\New folder\src\windows_automation\test_windows.py", line 39, in test_notepad_with_factory
+    driver = create_windows_driver(test_config)
+  File "C:\Code\New folder\src\windows_automation\windows_driver_factory.py", line 23, in create_windows_driver
+    result = create_remote_windows_driver(req, options)
+  File "C:\Code\New folder\src\windows_automation\windows_driver_factory.py", line 54, in create_remote_windows_driver
+    appium_driver = webdriver.Remote(
+        command_executor=grid['hubUrl'],
+        desired_capabilities=options
+    )
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'desired_capabilities'
+2025-05-28 03:31:30,607 - INFO - Test execution completed.
+2025-05-28 03:32:26,407 - INFO - Starting Notepad automation test with Windows Driver Factory...
+2025-05-28 03:32:26,407 - INFO - 1. Creating Windows driver using factory...
+2025-05-28 03:32:26,407 - ERROR - Test failed: WebDriver.__init__() got an unexpected keyword argument 'desired_capabilities'
+Traceback (most recent call last):
+  File "C:\Code\New folder\src\windows_automation\test_windows.py", line 39, in test_notepad_with_factory
+    driver = create_windows_driver(test_config)
+  File "C:\Code\New folder\src\windows_automation\windows_driver_factory.py", line 23, in create_windows_driver
+    result = create_remote_windows_driver(req, options)
+  File "C:\Code\New folder\src\windows_automation\windows_driver_factory.py", line 54, in create_remote_windows_driver
+    appium_driver = webdriver.Remote(
+        command_executor=grid['hubUrl'],
+        options=options if isinstance(options, WindowsOptions) else None,
+        desired_capabilities=options if not isinstance(options, WindowsOptions) else None
+    )
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'desired_capabilities'
+2025-05-28 03:32:26,409 - INFO - Test execution completed.
+2025-05-28 03:33:09,518 - INFO - Starting Notepad automation test with Windows Driver Factory...
+2025-05-28 03:33:09,518 - INFO - 1. Creating Windows driver using factory...
+2025-05-28 03:33:09,538 - ERROR - Test failed: Message: Bad capabilities. Specify either app or appTopLevelWindow to create a session
+Traceback (most recent call last):
+  File "C:\Code\New folder\src\windows_automation\test_windows.py", line 39, in test_notepad_with_factory
+    driver = create_windows_driver(test_config)
+  File "C:\Code\New folder\src\windows_automation\windows_driver_factory.py", line 23, in create_windows_driver
+    result = create_remote_windows_driver(req, options)
+  File "C:\Code\New folder\src\windows_automation\windows_driver_factory.py", line 63, in create_remote_windows_driver
+    appium_driver = webdriver.Remote(
+        command_executor=grid['hubUrl'],
+        options=caps
+    )
+  File "C:\Users\RohanThomas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\appium\webdriver\webdriver.py", line 238, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        client_config=client_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\RohanThomas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\RohanThomas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\appium\webdriver\webdriver.py", line 329, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "C:\Users\RohanThomas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\RohanThomas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Bad capabilities. Specify either app or appTopLevelWindow to create a session
+
+2025-05-28 03:33:09,540 - INFO - Test execution completed.
+2025-05-28 03:36:34,190 - INFO - Starting Notepad automation test with Windows Driver Factory...
+2025-05-28 03:36:34,191 - INFO - 1. Creating Windows driver using factory...
+2025-05-28 03:36:34,212 - ERROR - Test failed: Message: Bad capabilities. Specify either app or appTopLevelWindow to create a session
+Traceback (most recent call last):
+  File "C:\Code\New folder\src\windows_automation\test_windows.py", line 39, in test_notepad_with_factory
+    driver = create_windows_driver(test_config)
+  File "C:\Code\New folder\src\windows_automation\windows_driver_factory.py", line 23, in create_windows_driver
+    result = create_remote_windows_driver(req, options)
+  File "C:\Code\New folder\src\windows_automation\windows_driver_factory.py", line 63, in create_remote_windows_driver
+    appium_driver = webdriver.Remote(
+        command_executor=grid['hubUrl'],
+        options=caps
+    )
+  File "C:\Users\RohanThomas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\appium\webdriver\webdriver.py", line 238, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        client_config=client_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\RohanThomas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\RohanThomas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\appium\webdriver\webdriver.py", line 329, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "C:\Users\RohanThomas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\RohanThomas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Bad capabilities. Specify either app or appTopLevelWindow to create a session
+
+2025-05-28 03:36:34,214 - INFO - Test execution completed.
+2025-05-28 03:50:43,938 - __main__ - INFO - Starting Notepad automation test...
+2025-05-28 03:50:43,938 - __main__ - INFO - 1. Creating Windows driver...
+2025-05-28 03:50:43,962 - __main__ - ERROR - Test failed with error: Message: Bad capabilities. Specify either app or appTopLevelWindow to create a session
+Traceback (most recent call last):
+  File "C:\Code\New folder\src\windows_automation\test_windows.py", line 75, in test_notepad_automation
+    driver = create_windows_driver(TEST_CONFIG)
+  File "C:\Code\New folder\src\windows_automation\windows_driver_factory.py", line 23, in create_windows_driver
+    result = create_remote_windows_driver(req, options)
+  File "C:\Code\New folder\src\windows_automation\windows_driver_factory.py", line 67, in create_remote_windows_driver
+    appium_driver = webdriver.Remote(
+        command_executor=grid['hubUrl'],
+        options=options
+    )
+  File "C:\Users\RohanThomas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\appium\webdriver\webdriver.py", line 238, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        client_config=client_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\RohanThomas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\RohanThomas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\appium\webdriver\webdriver.py", line 329, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "C:\Users\RohanThomas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\selenium\webdriver\remote\webdriver.py", line 447, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\RohanThomas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Bad capabilities. Specify either app or appTopLevelWindow to create a session
+
+2025-05-28 04:03:51,558 - __main__ - INFO - Starting Notepad automation test...
+2025-05-28 04:03:51,559 - __main__ - INFO - 1. Creating Windows driver...
+2025-05-28 04:04:12,793 - __main__ - ERROR - Test failed with error: name 'WindowsDriver' is not defined
+Traceback (most recent call last):
+  File "C:\Code\New folder\src\windows_automation\test_windows.py", line 75, in test_notepad_automation
+    driver = create_windows_driver(TEST_CONFIG)
+  File "C:\Code\New folder\src\windows_automation\windows_driver_factory.py", line 24, in create_windows_driver
+    return WindowsDriver(req, result['driver'], result['service'], 'WindowsDriver', IMPLICIT_WAIT)
+           ^^^^^^^^^^^^^
+NameError: name 'WindowsDriver' is not defined. Did you mean: 'WindowsError'?
